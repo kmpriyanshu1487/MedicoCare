@@ -20,9 +20,8 @@ const Doctors = () => {
     applyFilter();
   }, [doctors, speciality]);
 
-  const getClassName = (currentSpeciality) => 
-    `w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-      speciality === currentSpeciality ? 'bg-indigo-100 text-black' : ''
+  const getClassName = (currentSpeciality) =>
+    `w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === currentSpeciality ? 'bg-indigo-100 text-black' : ''
     }`;
 
   return (
@@ -70,9 +69,9 @@ const Doctors = () => {
         <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
           {
             filterDoc.map((doctor, index) => (
-              <div 
-              onClick={() => navigate(`/appointment/${doctor._id}`)}
- 
+              <div
+                onClick={() => navigate(`/appointment/${doctor._id}`)}
+
                 key={index}
                 className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-transform duration-500'
               >
