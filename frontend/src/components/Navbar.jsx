@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
+import profileLogo from '../assets/logo/profile (3).png'
 import assets_logo from '../assets/logo/logo11.png'
 import { NavLink, useNavigate } from 'react-router-dom'
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
             <div className='flex items-center gap-3'>
                 {
                     token ? <div className='flex items-center gap-2 cursor-pointer group relative'>
-                        <img src={assets.profile_pic} alt="" className='w-8 rounded-full' />
+                        <img src={profileLogo} alt="" className='w-8 rounded-full' />
                         <img src={assets.dropdown_icon} className='w-2.5'/>
                         <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
                             <div className='min-w-48 bg-stone-50 rounded flex flex-col gap4 p-4'>
