@@ -13,7 +13,7 @@ const MyProfile = () => {
       line2: "state, india"
     },
     gender: "male",
-    dob: "2002-07-25" // Ensure this is in YYYY-MM-DD format for the date input to work properly
+    dob: "2002-07-25" 
   });
 
   const [isEdit, setIsEdit] = useState(false);
@@ -40,24 +40,26 @@ const MyProfile = () => {
         <p className='text-neutral-500 underline mt-3'>Contact Information</p>
         <div className='grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-neutral-700'>
           <p className='font-medium'>Email Id:</p>
-          <p className='text-blue-500'>{userData.email}</p>
+          <p className='text-blue-400'>{userData.email}</p>
           <p className='font-medium'>Phone:</p>
           {
             isEdit ? (
               <input
+              className='bg-gray-100 max-w-52'
                 type="text"
                 value={userData.phone}
                 onChange={e => setUserData(prev => ({ ...prev, phone: e.target.value }))}
               />
             ) : (
-              <p>{userData.phone}</p>
+              <p className='text-blue-400'>{userData.phone}</p>
             )
           }
-          <p>Address:</p>
+          <p className='font-medium'>Address:</p>
           {
             isEdit ? (
               <>
                 <input
+                className='bg-gray-50'
                   type="text"
                   value={userData.address.line1}
                   onChange={e => setUserData(prev => ({
@@ -67,6 +69,7 @@ const MyProfile = () => {
                 />
                 <br />
                 <input
+                className='bg-gray-50'
                   type="text"
                   value={userData.address.line2}
                   onChange={e => setUserData(prev => ({
@@ -76,7 +79,7 @@ const MyProfile = () => {
                 />
               </>
             ) : (
-              <p>
+              <p className='text-gray-500'>
                 {userData.address.line1}
                 <br />
                 {userData.address.line2}
@@ -86,12 +89,13 @@ const MyProfile = () => {
         </div>
       </div>
       <div>
-        <p>Basic Information</p>
-        <div>
-          <p>Gender:</p>
+        <p className='text-neutral-500 underline mt-3'>Basic Information</p>
+        <div className='grid grid-cols-[1fr_3fr] gap-2.5 mt-3 text-neutral-700'>
+          <p className='font-medium '>Gender:</p>
           {
             isEdit ? (
               <select
+              className='max-w-20 bg-gray-100'
                 onChange={e => setUserData(prev => ({ ...prev, gender: e.target.value }))}
                 value={userData.gender}
               >
@@ -99,13 +103,14 @@ const MyProfile = () => {
                 <option value="female">Female</option>
               </select>
             ) : (
-              <p>{userData.gender}</p>
+              <p className='text-gray-400'>{userData.gender}</p>
             )
           }
-          <p>Birthday:</p>
+          <p className='font-medium'>Birthday:</p>
           {
             isEdit ? (
               <input
+              className='max-w-28 bg-gray-100'
                 type="date"
                 value={userData.dob}
                 onChange={e => setUserData(prev => ({ ...prev, dob: e.target.value }))}
@@ -118,7 +123,7 @@ const MyProfile = () => {
       </div>
 
 
-      <button className="border border-black px-8 py-4 text-sm" onClick={() => setIsEdit(!isEdit)}>
+      <button className="border border-black px-8 py-4 text-sm hover:bg-primary hover:text-white transition-all" onClick={() => setIsEdit(!isEdit)}>
         {isEdit ? "Save" : "Edit Information"}
       </button>
     </div>
