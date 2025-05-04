@@ -31,7 +31,6 @@ Check out the live site: [View Live](https://medici-care.netlify.app/)
 ![About](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img5.png?raw=true)  
 ![Services](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img6.png?raw=true)  
 ![News related to Health](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img7.png?raw=true)
-**Frontend Contributor**  
 
 
 ```bash
@@ -47,9 +46,7 @@ npm install
 # Start the development server
 npm run dev
 
-## 👨‍💻 Author & Contributor
 
 
-**Frontend Contributor**  
-![Priyanshu](https://github.com/kmpriyanshu1487)
+
 
