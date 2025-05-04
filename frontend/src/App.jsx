@@ -10,6 +10,8 @@ import MyAppointments from './pages/MyAppointments'
 import Appointment from './pages/Appointment'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Blog from './pages/Blog'
+import BrainTumer from './pages/BrainTumer'
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path='/doctors/:speciality' element={<Doctors/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path="/braintumer" element={<BrainTumer />} />
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/my-profile' element={<MyProfile/>}/>
         <Route path='/my-appointments' element={<MyAppointments/>}/>

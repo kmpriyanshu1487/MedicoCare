@@ -1,0 +1,115 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container h2{
+    margin: 10px;
+    font-size: 18px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    background-color: #fff;
+    width: 20rem;
+    height: 34rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin: 5px;
+}
+
+.card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(2px);
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+    z-index: -1;
+}
+
+.card h2 {
+    background-color: transparent;
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-weight: normal;
+    text-transform: uppercase;
+    z-index: 1;
+    color: #fff;
+}
+
+.card p,
+.card a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+    z-index: 1;
+    color: #fff;
+    background-color: transparent;
+}
+
+.card p {
+    background-color: transparent;
+    inset: auto auto 80px 30px;
+    text-align: justify;
+}
+
+.card a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card:hover h2 {
+    inset: auto auto 350px 30px;
+    transition: inset .3s ease-out;
+}
+
+.card:hover p,
+.card:hover a {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+}
+
+.card:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    background-color: rgb(252, 70, 100);
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.button {
+
+    display: flex;
+    background-color: rgb(252, 70, 100);
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #fff;
+}
+.card-content a{
+    padding: 5px 15px;
+    background-color: rgb(252, 70, 100);
+}
