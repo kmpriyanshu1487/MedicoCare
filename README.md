@@ -1,6 +1,6 @@
 # 🌐 MEDICOCARE — Doctors Appointment Booking Application
 
-A responsive and modern web application for Doctors Appointment Booking. Built using  React, Tailwind CSS.
+A responsive and modern web application for booking doctor appointments. Built using **React** and **Tailwind CSS**.
 
 ## 🚀 Live Demo
 
@@ -8,32 +8,37 @@ Check out the live site: [View Live](https://medici-care.netlify.app/)
 
 ## 📝 Features
 
-- 🔍 Feature 1 (Payment)
-- 📊 Feature 2 (Fetching News Related to health using api)
-- 💬 Feature 3 (Brain tumer Detection)
-- 📱 Fully responsive for mobile, tablet, and desktop
+- 💳 **Payment Integration**
+- 📰 **Fetches Health-Related News via API**
+- 🧠 **Brain Tumor Detection Tool**
+- 📱 **Fully Responsive** (Mobile, Tablet, Desktop)
+
+
+**Frontend Contributor**
+![@Priyanshu](https://github.com/kmpriyanshu1487)
+
 
 ## ⚙️ Tech Stack
 
-- **Frontend:** React, Tailwind CSS
-- **Deployment:**Netlify / GitHub Pages
+- **Frontend:** React, Tailwind CSS  
+- **Deployment:** Netlify / GitHub Pages
 
-## 📷 Screenshots
+## 📷 UI Screenshots
 
-![Homepage](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img1.png?raw=true)
-![Speciality Available](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img2.png?raw=true)
-![Testimonials](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img3.png?raw=true)
-![About](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img5.png?raw=true)
-![Services](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img6.png?raw=true)
+![Homepage](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img1.png?raw=true)  
+![Speciality Available](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img2.png?raw=true)  
+![Testimonials](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img3.png?raw=true)  
+![About](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img5.png?raw=true)  
+![Services](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img6.png?raw=true)  
 ![News related to Health](https://github.com/kmpriyanshu1487/MedicoCare/blob/main/medico-img7.png?raw=true)
+**Frontend Contributor**  
 
-## 🚀 Installation & Setup
 
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/kmpriyanshu1487/MedicoCare
 
-# Navigate to project directory
+# Navigate to the frontend directory
 cd frontend
 
 # Install dependencies
@@ -42,17 +47,9 @@ npm install
 # Start the development server
 npm run dev
 
-## Authors
-
-- [@PriyanshuKumar](https://github.com/kmpriyanshu1487)
+## 👨‍💻 Author & Contributor
 
 
-## 🚀 About Me
-I'm  priyanshu Kumar is a passionate front-end developer with experience in building responsive, dynamic web applications using the react. He has worked on projects like MedicoCare and TourScape and is pursuing a B.Tech in Computer Science and IT, showcasing strong technical and problem-solving skills..
-
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]https://priyanshu-port.netlify.app/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/priyanshu-kumar-139097258)
-
+**Frontend Contributor**  
+![Priyanshu](https://github.com/kmpriyanshu1487)
 
